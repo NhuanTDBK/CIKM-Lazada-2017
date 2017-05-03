@@ -1,0 +1,47 @@
+final_regressor = lazada_baseline1.vw
+using dropout for neural network training
+Num weight bits = 26
+learning rate = 0.5
+initial_t = 0
+power_t = 0.5
+decay_learning_rate = 1
+creating cache_file = train.w.cache
+Reading datafile = train.w
+num sources = 1
+average  since         example        example  current  current  current
+loss     last          counter         weight    label  predict features
+0.693147 0.693147            1            1.0   1.0000   0.0000       32
+0.568158 0.443170            2            2.0   1.0000   0.5840       42
+0.476230 0.384302            4            4.0   1.0000   0.8145       60
+0.514346 0.552462            8            8.0   1.0000   1.2507      114
+0.343354 0.172362           16           16.0   1.0000   2.2987       49
+0.194627 0.045901           32           32.0   1.0000   2.5069       23
+0.331711 0.468794           64           64.0   1.0000   3.3227       40
+0.280895 0.230079          128          128.0   1.0000   3.8233       41
+0.259297 0.237700          256          256.0   1.0000   0.3122       57
+0.217466 0.175635          512          512.0   1.0000   2.2607       34
+0.224261 0.231056         1024         1024.0   1.0000   1.8114       42
+0.223655 0.223048         2048         2048.0   1.0000   2.5787       55
+0.214367 0.205079         4096         4096.0   1.0000   1.2635       58
+0.206003 0.197640         8192         8192.0   1.0000   2.2463       43
+0.198733 0.191462        16384        16384.0   1.0000   3.4894       37
+0.185602 0.185602        32768        32768.0   1.0000   1.4872       44 h
+0.185744 0.185886        65536        65536.0   1.0000   2.7316       42 h
+0.180077 0.174410       131072       131072.0   1.0000   3.0252       28 h
+0.178498 0.176919       262144       262144.0   1.0000   3.5990       49 h
+
+nhuanhunter@nhuanhunter-K43SM:~/MyWorking/CIKM_Lazada/vw_model$ 0.176173 0.173849       524288       524288.0   1.0000   1.8858       28 h
+tail 
+dat.w.cache          lazada_baseline1.vw  log_5_3_22_08        train.w              train.w.cache        val.w                
+nhuanhunter@nhuanhunter-K43SM:~/MyWorking/CIKM_Lazada/vw_model$ tail log_5_3_22_08 
+nhuanhunter@nhuanhunter-K43SM:~/MyWorking/CIKM_Lazada/vw_model$ 
+finished run
+number of examples per pass = 26124
+passes used = 21
+weighted example sum = 548604.000000
+weighted label sum = 486150.000000
+average loss = 0.169109 h
+best constant = 2.807489
+best constant's loss = 0.218410
+total feature number = 27258399
+
