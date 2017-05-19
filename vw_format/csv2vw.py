@@ -37,7 +37,12 @@ def csv_to_vw(finput,foutput,train=True,mode='clarity'):
             else:
                 line +=" |%s %s:%s"%(key,map_namespace[key],val)
 <<<<<<< HEAD
+<<<<<<< HEAD
         vw_row = "%s'%s%s\n"%(label,idx,line)
+=======
+        vw_row = "%s '%s%s\n"%(label,idx,line)
+        #lines.append(vw_row)
+>>>>>>> 6a98e87302d772281b50b3b578efcf966647e51b
 =======
         vw_row = "%s '%s%s\n"%(label,idx,line)
         #lines.append(vw_row)
